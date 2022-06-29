@@ -15,5 +15,8 @@
   (datum->syntax
    #f
    `(module regex-mod racket
-      ,(value-of (parse port) init-env)))) ; change the environment
+      (provide parser)
+      (define (parser s)
+        (parse (open-input-string s))))))
+
 

@@ -1,3 +1,3 @@
-#lang regex
+#lang regex-processor
 
 a+b
