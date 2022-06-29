@@ -1,0 +1,1 @@
+("7.9" racket ("85c273e5e94c8406ed5f3b4bd861ab1470157557" . "b7664dfe725f3d4acbfc30bdad2495c934595bce") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt") (collects #"regex-processor" #"compiler.rkt") (collects #"regex-processor" #"parser.rkt") (collects #"regex-processor" #"processor.rkt"))

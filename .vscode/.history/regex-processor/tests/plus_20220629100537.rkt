@@ -1,0 +1,3 @@
+#lang regex
+
+a+b

@@ -1,0 +1,1 @@
+("7.9" racket ("fd406a51ecd752e3e42bf46ca160fcd7a2b3fa45" . "2030c9d9f0ebba779f5cf762bfac1ca32dced715") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt") (collects #"regex-processor" #"vm.rkt") (indirect collects #"racket" #"match" #"gen-match.rkt") (indirect collects #"racket" #"match" #"parse.rkt"))

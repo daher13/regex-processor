@@ -1,0 +1,8 @@
+{
+  "editor.defaultFormatter": "evzen-wybitul.magic-racket",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.tabSize": 2,
+  "editor.fontSize": 25,
+  "terminal.integrated.fontSize": 25,
+}

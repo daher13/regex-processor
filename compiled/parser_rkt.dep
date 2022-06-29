@@ -1,0 +1,1 @@
+("7.9" racket ("4ac3ea3994babed6c697e13e50e87216a420ac47" . "2d90270ec411becff8d8f797b58041f42c707b34") (collects #"parser-tools" #"yacc.rkt") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt") (collects #"regex-processor" #"lexer.rkt") (collects #"regex-processor" #"re.rkt"))
