@@ -1,8 +1,8 @@
 #lang racket
 
-(require "./parser.rkt")
-(require "./compiler.rkt")
-(require "./processor.rkt")
+(require "parser.rkt")
+(require "compiler.rkt")
+(require "processor.rkt")
 
 (provide (rename-out [regex-read read]
                      [regex-read-syntax read-syntax]))
@@ -15,8 +15,8 @@
   (datum->syntax
    #f
    `(module regex-mod racket
-      (provide parser)
-      (define (parser s)
-        (parse (open-input-string s))))))
+      ,(finish (parse port)))))
 
-
+(define (finish env)
+  (displayln "Finished!"))
+  

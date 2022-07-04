@@ -1,3 +1,2 @@
 #lang regex-processor
-
-a+b
+ab+
