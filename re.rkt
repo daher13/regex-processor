@@ -32,4 +32,16 @@
   (expr)
   #:transparent)
 
+(struct re-regex
+  (regex-str)
+  #:transparent)
+
+(struct re-test
+  (test-str)
+  #:transparent)
+
+(struct lang
+  (re input)
+  #:transparent)
+
 (provide (all-defined-out))

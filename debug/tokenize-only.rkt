@@ -29,4 +29,4 @@
 (module+ reader (provide (rename-out [regex-read read]
                                      [regex-read-syntax read-syntax])))
 
-(regex-read  (open-input-string "a"))
+(regex-read  (open-input-string "regex ab+ input \"aab\""))

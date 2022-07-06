@@ -1,6 +1,5 @@
 #lang racket
 
-
 (require "../parser.rkt")
 
 (module reader racket
@@ -19,4 +18,4 @@
      `(module imp-mod racket
         ,@(parse port)))))
 
-(parse (open-input-string "ab+++c*d"))
+(parse (open-input-string "regex ab* input \"abcd\""))

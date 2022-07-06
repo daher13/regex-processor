@@ -1,2 +1,3 @@
 #lang regex-processor
-ab+
+
+regex ab* input "ababc"

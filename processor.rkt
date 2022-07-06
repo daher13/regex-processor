@@ -38,6 +38,7 @@
 
 (define (vm-process s)
   (match (fetch-code s)
+    ['() s]
     [(vm-match) (matches s)]
     [(vm-char ch) (cond
                     [(eq? (fetch-char s) ch) (vm-process (inc-pc (inc-sp s)))]
@@ -56,10 +57,12 @@
     [(or (>= (state-pc s) (length (state-code s))) (>= (state-sp s) (string-length (state-input s)))) '()]
     [else (match (vm-process s)
             [(state pc sp input code #t) (cons (cons (state-sp s) sp) (search (state 0 sp input code #f)))]
+            [(state pc sp input code #f) '()]
             )]
     ))
 
 (define (process e s)
+  (display s)
   (search (state 0 0 s e #f)))
 
 (provide process)

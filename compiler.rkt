@@ -8,7 +8,7 @@
     [(re-lam) (list (vm-match))]
     [(re-cat e1 e2) (let* ([c1 (compile1 e1 (add1 c))]
                            [c2 (compile1 e2 (+ c 2))])
-                      (append (list c1 c2)))]
+                      (append c1 c2))]
     [(re-char ch) (list (vm-char ch))]
     [(re-choice e1 e2) (let* ([c1 (compile1 e1 (add1 c))]
                               [c2 (compile1 e2 (+ c 2))] ; o jump é so uma instrução
@@ -28,7 +28,7 @@
                         [l2 (add1 c)]
                         [l3 (+ c (length c2) 1)]
                         [l1 (+ 2 l3)])
-                   (append (list (vm-split l2 l3) c2 (vm-jmp l1)))
+                   (append (list (vm-split l2 l3)) c2 (list (vm-jmp l1)))
                    )]))
 
 (define (compile re)
