@@ -1,1 +1,1 @@
-("7.9" racket ("19d9d0f941ba163a931275e71c0649830ba97df8" . "fa8524b4544cbb011988d70da2088c80e9de7604") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt") (collects #"regex-processor" #"parser.rkt"))
+("8.12" ta6le ("ae7f7e123b007060447b0e4c3379a20c9258c443" . "504f32f721721b867490a495601cf66f651b80d3") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt") (collects #"regex-processor" #"parser.rkt"))
